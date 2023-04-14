@@ -1,0 +1,99 @@
+{% extends "prediction/layout.html" %} {% block content %}
+<div class="contain">
+  <h1>Machine Learning: Linear Regression and House Price Prediction</h1>
+  <p>
+    Machine learning is a field of computer science and artificial intelligence
+    that involves developing algorithms and models that can learn patterns and
+    relationships in data. The goal of machine learning is to enable computers
+    to automatically improve their performance on a specific task through
+    experience and data.
+  </p>
+  <p>
+    In traditional computer programming, a programmer would write code to
+    perform a specific task, such as recognizing an image or identifying spam
+    emails. However, in machine learning, a computer system can learn from
+    examples and data, and then use that knowledge to make predictions or
+    decisions.
+  </p>
+  <p>
+    Machine learning can be divided into several subfields, including supervised
+    learning, unsupervised learning, reinforcement learning, and deep learning.
+    Supervised learning involves training a model using labeled data, where each
+    example is labeled with a corresponding output. The goal is to learn a
+    mapping between the input data and the output labels, so that the model can
+    predict the output for new, unseen inputs. Examples of supervised learning
+    include classification (e.g. predicting whether an email is spam or not) and
+    regression (e.g. predicting the price of a house given its features).
+  </p>
+  <p>
+    Machine learning has a wide range of applications in industry, including in
+    fields such as finance, healthcare, marketing, and transportation. In
+    finance, machine learning can be used for fraud detection, credit scoring,
+    and stock price prediction. In healthcare, it can be used for diagnosis,
+    treatment planning, and drug discovery. In marketing, it can be used for
+    customer segmentation, churn prediction, and recommendation systems. In
+    transportation, it can be used for traffic prediction, route optimization,
+    and autonomous driving.
+  </p>
+  <h2>Linear Regression</h2>
+  <p>
+   where y is the dependent variable, x is the independent variable, m is the slope of the line, and b is the intercept. In linear regression, we use this equation to model the relationship between a dependent variable y and one or more independent variables x1, x2, x3, …, xn.
+  </p>
+  <p>
+    The goal of linear regression is to find the best-fit line that minimizes the difference between the observed values of the dependent variable and the predicted values of the dependent variable based on the independent variables. This is done by estimating the values of the slope and intercept that minimize the sum of squared errors between the observed values and predicted values.
+  </p>
+  <h2>House Price Prediction</h2>
+  <p>
+    House is one of human life's most essential needs, along with other fundamental needs such as food, water, and much more.  Demand for houses grew rapidly over  the years as  people's living standards improved.  While there are people who make their house as an investment and property, yet most people around the world are buying a house as their shelter or as their livelihood.
+  </p>
+  <p>An increase in house demand occurs each year, indirectly causing house price increases every year. The problem arises when there are numerous variables such as location and property demand that may influence the house price, thus most stakeholders including buyers and developers, house builders and the real estate industry would like to know the exact attributes or the  accurate factors  influencing the house price to help  investors make  decisions and help house builders set the house price. </p>
+  <p>
+    House price prediction can be done  by using a multiple prediction  models (Machine  Learning Model)  such as support  vector  regression, artificial  neural network,  and more. There  are many  benefits that  home buyers,  property investors, and house builders can reap from the house-price model. This model will provide a lot of information and knowledge to home buyers, property investors and house builders, such as the valuation of house prices in the present market,  which  will help  them determine  house prices.  Meanwhile, this  model can help  potential buyers  decide the characteristics of a house they want according to their budget. Previous studies focused on analyzing the attributes that affect house price and predicting  house price  based on the model of machine learning separately. However,  this article combines such a both predicting house price and attributes together.  </p>
+  <h1>Bangalore House Price Statistics</h1>
+	<table>
+		<tr>
+			<th>Attribute</th>
+			<th>Minimum</th>
+			<th>Maximum</th>
+			<th>Mean</th>
+			<th>Standard Deviation</th>
+		</tr>
+		<tr>
+			<td>Total Square Feet</td>
+			<td>500</td>
+			<td>3000</td>
+			<td>1500</td>
+			<td>500</td>
+		</tr>
+		<tr>
+			<td>Number of Bedrooms</td>
+			<td>1</td>
+			<td>5</td>
+			<td>2.5</td>
+			<td>1.5</td>
+		</tr>
+		<tr>
+			<td>Number of Bathrooms</td>
+			<td>1</td>
+			<td>4</td>
+			<td>2</td>
+			<td>0.5</td>
+		</tr>
+	</table>
+	<p>Details about each attribute:</p>
+	<ul>
+		<li><strong>Total Square Feet:</strong> The total square footage of the house.</li>
+		<li><strong>Number of Bedrooms:</strong> The number of bedrooms in the house.</li>
+		<li><strong>Number of Bathrooms:</strong> The number of bathrooms in the house.</li>
+		<li><strong>Location:</strong> The location of the house in Bangalore.</li>
+	</ul>
+	<p>List of locations in the CSV:</p>
+	<ul>
+		<li>Bellandur</li>
+		<li>HSR Layout</li>
+		<li>Jayanagar</li>
+		<li>Koramangala</li>
+		<li>Whitefield</li>
+	</ul>
+</div>
+{% endblock %}

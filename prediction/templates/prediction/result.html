@@ -1,0 +1,16 @@
+{% extends "prediction/layout.html" %} {% block content %}
+<div class="contain">
+  <h2>Bangalore House Price Prediction</h2>
+  <p>Hey {{request.user}},</p>
+  <p>We have prediction the price for the requirements you have given</p>
+  <ul>
+    <li>location: {{location}}</li>
+    <li>Square Feet: {{sqft}}</li>
+    <li>Number of bathrooms: {{bath}}</li>
+    <li>Number of bedrooms: {{bhk}}</li>
+  </ul>
+  <p>Estimated Price is:</p>
+  <p>{{prediction}} Lakhs</p>
+</div>
+
+{% endblock %}

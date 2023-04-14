@@ -1,0 +1,23 @@
+{% extends "prediction/layout.html" %} {% block content %}
+<div class="contain">
+  <h2>Bangalore House Price Prediction</h2>
+  <p>Hey {{request.user}},</p>
+  <p>
+    Enter the values in the form and we will predict the price for the house of
+    your requirement using the machine learning model.
+  </p>
+  <form action="{% url 'results' %}" class='predform'>
+    {% csrf_token %}
+    <p>Location</p>
+    <input type="text" name="loc" />
+    <p>Square Feet</p>
+    <input type="text" name="sqft" />
+    <p>Bathroom</p>
+    <input type="text" name="bath" />
+    <p>BHK</p>
+    <input type="text" name="bhk" />
+    <input type="submit" class="button" />
+  </form>
+</div>
+
+{% endblock %}
